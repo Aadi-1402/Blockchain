@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blockchain Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Blockchain Double-Spend Simulator</h1>
+
+<section class="section">
+    <h2>Create Transaction</h2>
+    <input id="from" placeholder="From (Alice)" />
+    <input id="to" placeholder="To (Bob)" />
+    <input id="amount" placeholder="Amount" />
+    <button onclick="createTx()">Create Transaction</button>
+</section>
+
+<section class="section">
+    <h2>Mining</h2>
+    <button onclick="mine()">Mine Block</button>
+</section>
+
+<section class="section">
+    <h2>Chain</h2>
+    <pre id="chainOutput"></pre>
+</section>
+
+<section class="section">
+    <h2>Mempool</h2>
+    <pre id="mempoolOutput"></pre>
+</section>
+
+<section class="section">
+    <h2>UTXO Set</h2>
+    <pre id="utxoOutput"></pre>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
